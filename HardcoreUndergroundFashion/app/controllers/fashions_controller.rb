@@ -7,7 +7,6 @@ class FashionsController < ApplicationController
   def show
     # Marion
     @fashion = Fashion.find(params[:id])
-    @MESSINGWITHTHESHOW
   end
 
   def new
