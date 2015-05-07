@@ -28,6 +28,8 @@ class FashionsController < ApplicationController
 
   def destroy
     # Marion
+    Fashion.destroy(params[:id])
+    redirect_to '/fashions'
   end
 
 
