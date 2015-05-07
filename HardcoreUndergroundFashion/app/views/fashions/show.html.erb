@@ -1,2 +1,21 @@
 <h1>Fashions#show</h1>
+<h1>Fashion [Model] Show</h1>
+
+<%= render partial: '' %>
+
+<h2>Hello <%= fashion.name %></h2>
+
+<ul>
+  <% @fashion.each do |fashion| %>
+    <li>
+      <%= fasion.name %>
+    </li>
+    <li>
+      <%= fasion.height %>
+    </li>
+    <li>
+      <%= fasion.brand %>
+    </li>
+    <% end %>
+</ul>
 <p>Find me in app/views/fashions/show.html.erb</p>
