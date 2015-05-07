@@ -24,7 +24,7 @@ class FashionsController < ApplicationController
   def update
     fashion = Fashion.find(params[:id])
     fashion.update!(fashion_params)
-    redirect_to "fashions/#{fashion.id}"
+    redirect_to "/fashions/#{fashion.id}"
     # Ken
   end
 
