@@ -1,2 +1,0 @@
-# Magz
-Practicing Git
