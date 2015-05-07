@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  get 'fashions/index'
+  # get 'fashions/index'
+  #
+  # get 'fashions/show'
+  #
+  # get 'fashions/new'
+  #
+  # get 'fashions/edit'
 
-  get 'fashions/show'
-
-  get 'fashions/new'
-
-  get 'fashions/edit'
-
+  root 'fashions#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
