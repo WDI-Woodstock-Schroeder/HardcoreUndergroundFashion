@@ -1,6 +1,6 @@
 class FashionsController < ApplicationController
   def index
-    # Alice
+    @fashions = Fashion.all
   end
 
   def show
