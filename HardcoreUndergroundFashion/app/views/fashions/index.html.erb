@@ -1,2 +1,13 @@
-<h1>Fashions#index</h1>
-<p>Find me in app/views/fashions/index.html.erb</p>
+<h1>Fashions!</h1>
+
+<ul>
+  <% @fashions.each do |fashion| %>
+    <li>
+      <%= fashion.name %>
+      <%= fashion.height %>
+      <%= fashion.weight %>
+      <%= fashion.brand %>
+      <%= fashion.work_it %>
+    </li>
+  <% end %>
+</ul>
