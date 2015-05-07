@@ -1,0 +1,18 @@
+<h1>Fashion Show</h1>
+
+<%= render partial: 'navigation' %>
+
+<h2>Hello <%= @fashion.name %></h2>
+
+<ul>
+
+  <%= @fashion.each do |fashion| %>
+  <li>
+
+    <%= fashion.name %>
+
+  </li>
+
+  <%= end %>
+
+</ul>
