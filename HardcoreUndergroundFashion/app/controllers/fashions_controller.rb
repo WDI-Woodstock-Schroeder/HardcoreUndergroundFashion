@@ -1,4 +1,5 @@
 class FashionsController < ApplicationController
+
   def index
     # Alice
   end
@@ -8,10 +9,12 @@ class FashionsController < ApplicationController
   end
 
   def new
+    @fashion = Fashion.new
     # Ken
   end
 
   def edit
+    @fashion = Fashion.find(params[:id])
     # Ken
   end
 
