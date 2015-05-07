@@ -14,6 +14,8 @@ class FashionsController < ApplicationController
     # Ken
   end
   def create
+    fashion = Fashion.create( fashion_params )
+    redirect_to "/fashions/#{ fashion.id }"
     # Alice
   end
 
